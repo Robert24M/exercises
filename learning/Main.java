@@ -9,9 +9,7 @@ public class Main {
     
 
         Stack test = new Stack(5);
-    for (int i = 0; i < 6; i++){
-        test.add(i+5);
-    }
+
         for (int i = 0; i < 6; i++){
             test.get();
         }

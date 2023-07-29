@@ -38,7 +38,7 @@ public int get(){
 public void add (int num) {
     if (nextElementPos == size){
         System.out.println("Sorry, the stack is full!");
-        /*System.out.println("Would you like a bigger stack?");
+        System.out.println("Would you like a bigger stack?");
         System.out.println("You get only one single chance to press YES. Any other input will result in eternal damnation!");
         Scanner sc = new Scanner(System.in);
         String trashVar = sc.nextLine();
@@ -67,15 +67,20 @@ public void add (int num) {
             }
             int[] temparr = arr;
             arr = new int[size];
-          for(int i = 0; i <temparr.length; i++){
-              displayStack();
-                arr[i] = temparr[i];
-           }
+          for(int i = 0; i <arr.length; i++){
+              if(i<temparr.length){
+              arr[i] = temparr[i];
+              } else if (i == temparr.length) {
+                  arr[i] = num;
+              }else{
+                  arr[i] = 0;
+              }
+          }
           displayStack();
         }else{
             System.out.println("Ok. Bye");
         }
-*/
+
     }else{
         if (nextElementPos == 0) {
             arr[nextElementPos] = num;
