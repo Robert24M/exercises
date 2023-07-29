@@ -72,6 +72,8 @@ public void add (int num) {
               arr[i] = temparr[i];
               } else if (i == temparr.length) {
                   arr[i] = num;
+                  lastElementPos++;
+                  nextElementPos++;
               }else{
                   arr[i] = 0;
               }
